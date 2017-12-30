@@ -10,40 +10,65 @@
 .relative {
 	position: relative;
 }
-
-.width_51 {
-	max-width: 51px;
-}
 .opacity1 {
 	opacity: 1;
 }
 .overflow {
 	overflow: hidden;
 }
-/* -------------------- */
-.left_arrow, .right_arrow {
-	position: absolute;
-	top: 35%;
-	left: -105px;
-	display: inline-block;
-	background-color: white;
-	width: 210px;
-	height: 208px;
+.font-RobotoCondensed-Bold {
+	font-family: RobotoCondensed-Bold;
 }
-.left_arrow {
+.font-Roboto-Light {
+	font-family: Roboto-Light;
+}
+
+/* -------------------- */
+
+.left_arrow img, .right_arrow img {
+	display: block;
+	background-color: white;
+}
+.left_arrow img {
+	padding: 40% 13% 40% 61%;
 	border-top-right-radius: 100%;
 	border-bottom-right-radius: 100%;
 }
-.right_arrow {
-	left: -53px;
-	width: 210px;
+.right_arrow img {
+	padding: 40% 61% 40% 13%;
 	border-top-left-radius: 100%;
 	border-bottom-left-radius: 100%;
 }
-.left_arrow img, .right_arrow img {
-	margin-top: 42%;
-	margin-left: 85px;
+.left_control {
+	margin-left: -6.5%;
+	max-width: 210px;
+	margin-top: 19%;
 }
-.right_arrow img {
-	margin-left: -87px;
+.right_control {
+	margin-top: 19%;
+	margin-right: -6.9%;
+	max-width: 210px;
+}
+.logo {
+	position: absolute;
+	top: 5%;
+	left: 3%;
+	z-index: 1;
+}
+.photo_description {
+	position: absolute;
+	bottom: 4%;
+	right: 3%;
+	z-index: 1;
+	color: white;
+	line-height: 15px;
+}
+.photo_description h1 {
+	text-align: right;
+	font-size: 3.5vw;
+	line-height: 1.6vw;
+}
+.photo_description h2 {
+	font-size: 1.8vw;
+	letter-spacing: 0.2vw;
 }
