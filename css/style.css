@@ -22,9 +22,14 @@
 .font-Roboto-Light {
 	font-family: Roboto-Light;
 }
+.hide {
+	display: none;
+}
 
 /* -------------------- */
-
+.top_wrapper {
+	height: auto;
+}
 .left_arrow img, .right_arrow img {
 	display: block;
 	background-color: white;
@@ -71,4 +76,81 @@
 .photo_description h2 {
 	font-size: 1.8vw;
 	letter-spacing: 0.2vw;
+}
+
+.site-nav {
+  position: absolute;
+  width: 100%;
+  height: all;
+  background: white;
+  opacity: 0.8;
+  clip-path: circle(0px at top right);
+  transition: clip-path ease-in-out 700ms;
+  z-index: 1;
+}
+.site-nav ul {
+	margin-left: 27%;
+	margin-top: 19%;
+	padding-bottom: 22.8vw;
+}
+
+.site-nav ul li a {
+	opacity: 1;
+	font-size: 3.5vw;
+	color: black;
+	line-height: 4.5vw;
+}
+.site-nav ul li:hover a {
+	text-decoration: none;
+}
+
+.site-nav--open {
+  clip-path: circle(250% at top right);
+  display: block;
+}
+
+.menu-toggle {
+  padding: 1em;
+  position: absolute;
+  top: .5em;
+  right: .5em;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.hamburger, .hamburger::before, .hamburger::after {
+  content: ' ';
+  display: block;
+  background: #EBEBD3;
+  height: 3px;
+  width: 2em;
+  transition: all ease-in-out 300ms;
+}
+.hamburger {
+	width: 1.5em;
+	transform: rotateY(180deg);
+}
+
+.hamburger::before {
+  transform: translateY(-8px);
+}
+
+.hamburger::after {
+  transform: translateY(5px);
+}
+
+.open .hamburger {
+  transform: rotate(45deg);
+  background: red;
+  width: 2em;
+}
+
+.open .hamburger::before {
+  opacity: 0;
+  background: red;
+}
+
+.open .hamburger::after {
+  transform: translateY(-3px) rotate(-90deg);
+  background: red;
 }
