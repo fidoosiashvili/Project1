@@ -35,24 +35,24 @@
 	background-color: white;
 }
 .left_arrow img {
-	padding: 40% 13% 40% 61%;
+	padding: 40% 12% 40% 58%;
 	border-top-right-radius: 100%;
 	border-bottom-right-radius: 100%;
 }
 .right_arrow img {
-	padding: 40% 61% 40% 13%;
+	padding: 40% 55% 40% 11%;
 	border-top-left-radius: 100%;
 	border-bottom-left-radius: 100%;
 }
 .left_control {
 	margin-left: -6.5%;
-	max-width: 210px;
+	max-width: 195px;
 	margin-top: 19%;
 }
 .right_control {
 	margin-top: 19%;
 	margin-right: -6.9%;
-	max-width: 210px;
+	max-width: 195px;
 }
 .logo {
 	position: absolute;
@@ -153,4 +153,124 @@
 .open .hamburger::after {
   transform: translateY(-3px) rotate(-90deg);
   background: red;
+}
+.middle_header {
+	color: black;
+	font-size: 50px;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 6px;
+	margin-top: 110px;
+	margin-bottom: 110px;
+}
+.service_box {
+	background-color: #EBE8DE;
+	width: 100%;
+	height: auto;
+	margin-top: 1em;
+}
+.service_box a img {
+	margin: 0 auto;
+	display: block;
+	padding: 3vw 0px;
+	max-width: 100%;
+	max-height: 225px;
+}
+.service_box a:hover {
+	text-decoration: none;
+	-webkit-box-shadow: 0px 0px 32px 2px rgba(112,112,112,0.61);
+	-moz-box-shadow: 0px 0px 32px 2px rgba(112,112,112,0.61);
+	box-shadow: 0px 0px 32px 2px rgba(112,112,112,0.61);
+	transition: 0.3s;
+}
+#service_box_description {
+	font-size: 50px;
+	color: black;
+	letter-spacing: 7px;
+	text-transform: uppercase;
+	display: block;
+	text-align: center;
+	padding-bottom: 3.2vw;
+}
+.animation_objects {
+	margin-top: 142px;
+}
+.mountains_img {
+	height: 195px;
+}
+.trees_img {
+	height: 296px;
+	margin: -293px auto 0px auto;
+	display: block;
+}
+.road_line_img {
+	margin-top: 32px;
+	margin-bottom: 32px;
+}
+.moving_car_img {
+	position: absolute;
+	right: 0px;
+	top: -40px;
+}
+.moving_car_img{
+  animation: animationFrames ease-in 3.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  -webkit-animation: animationFrames ease-in 3.5s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-transform-origin: 50% 50%;
+  -moz-animation: animationFrames ease-in 3.5s;
+  -moz-animation-iteration-count: infinite;
+  -moz-transform-origin: 50% 50%;
+  -o-animation: animationFrames ease-in 3.5s;
+  -o-animation-iteration-count: infinite;
+  -o-transform-origin: 50% 50%;
+  -ms-animation: animationFrames ease-in 3.5s;
+  -ms-animation-iteration-count: infinite;
+  -ms-transform-origin: 50% 50%;
+}
+
+@keyframes animationFrames{
+  0% {
+    transform:  translate(300px,0px)  ;
+  }
+  100% {
+    transform:  translate(-3500px,0px)  ;
+  }
+}
+
+@-moz-keyframes animationFrames{
+  0% {
+    -moz-transform:  translate(300px,0px)  ;
+  }
+  100% {
+    -moz-transform:  translate(-3500px,0px)  ;
+  }
+}
+
+@-webkit-keyframes animationFrames {
+  0% {
+    -webkit-transform:  translate(300px,0px)  ;
+  }
+  100% {
+    -webkit-transform:  translate(-3500px,0px)  ;
+  }
+}
+
+@-o-keyframes animationFrames {
+  0% {
+    -o-transform:  translate(300px,0px)  ;
+  }
+  100% {
+    -o-transform:  translate(-3500px,0px)  ;
+  }
+}
+
+@-ms-keyframes animationFrames {
+  0% {
+    -ms-transform:  translate(300px,0px)  ;
+  }
+  100% {
+    -ms-transform:  translate(-3500px,0px)  ;
+  }
 }
