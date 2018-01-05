@@ -85,19 +85,32 @@
 
 </div>
 
-<div class="container-fluid no_padding overflow" id="car_animation">
+<div class="container-fluid no_padding overflow relative" id="car_animation">
 	<div class="animation_objects relative">
 		<img src="images/mountains.svg" class="mountains_img">
 		<img src="images/trees.svg" class="trees_img">
 		<img src="images/road_line.svg" class="road_line_img">
 		<img src="images/moving_car.png" class="moving_car_img">
 	</div>
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-lg-push-1">
+			<div id="map"></div>
+		</div>
+	</div>
+	<div class="row">
+		<div class=" contact_wrapper col-xs-10 col-xs-push-1 col-sm-10 col-sm-push-1 col-md-10 col-md-push-1 col-lg-8 col-lg-push-2">
+			arawras
+		</div>
+	</div>
+
 </div>
 
 
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/app.js"></script>
-
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJf6z554b7Mv59Ti103438P8i9TZG8ZCY&callback=initMap">
+    </script>
 </body>
 </html>

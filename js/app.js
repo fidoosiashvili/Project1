@@ -14,3 +14,15 @@ $('.menu-toggle').click(function() {
    $('.right_control').toggleClass('hide');      
 
 })
+
+function initMap() {
+        var uluru = {lat: 41.71751392, lng: 44.78465617};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 12,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
