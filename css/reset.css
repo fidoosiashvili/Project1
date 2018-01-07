@@ -34,3 +34,6 @@ a {
   height: 0;
   visibility: hidden;
 }
+input {
+	border: none;
+}

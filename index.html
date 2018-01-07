@@ -17,8 +17,8 @@
 		<nav class="site-nav clearfix">
       <ul>
         <li><a href="#home" class="font-RobotoCondensed-Bold"> HOME </a></li> 
-        <li><a href="" class="font-RobotoCondensed-Bold"> SERVICES </a></li>
-        <li><a href="" class="font-RobotoCondensed-Bold"> CONTACT </a></li>
+        <li><a href="#service_wrapper" class="font-RobotoCondensed-Bold"> SERVICES </a></li>
+        <li><a href="#contact" class="font-RobotoCondensed-Bold"> CONTACT </a></li>
       </ul> 
   </nav>
   
@@ -42,10 +42,18 @@
 		      </div>
 
 		      <div class="item">
+		      	<div class="photo_description">
+		      		<h1 class="font-RobotoCondensed-Bold"> 21.07. </h1>
+		      		<h2 class="font-Roboto-Light"> Vintage Auto Exhibition </h2>
+		      	</div>
 		        <img src="images/black_car.png" alt="Black_car" style="width:100%;">
 		      </div>
 		    
 		      <div class="item">
+		      	<div class="photo_description">
+		      		<h1 class="font-RobotoCondensed-Bold"> 23.03. </h1>
+		      		<h2 class="font-Roboto-Light"> Vintage Auto Exhibition </h2>
+		      	</div>
 		        <img src="images/white_car.png" alt="White_car" style="width:100%;">
 		      </div>
 		    </div>
@@ -85,7 +93,7 @@
 
 </div>
 
-<div class="container-fluid no_padding overflow relative" id="car_animation">
+<div class="container-fluid no_padding overflow" id="car_animation">
 	<div class="animation_objects relative">
 		<img src="images/mountains.svg" class="mountains_img">
 		<img src="images/trees.svg" class="trees_img">
@@ -97,13 +105,82 @@
 			<div id="map"></div>
 		</div>
 	</div>
+</div>	
+
+<div class="container-fluid no_padding relative" id="contact">	
 	<div class="row">
-		<div class=" contact_wrapper col-xs-10 col-xs-push-1 col-sm-10 col-sm-push-1 col-md-10 col-md-push-1 col-lg-8 col-lg-push-2">
-			arawras
+		<div class="contact_wrapper col-xs-10 col-xs-push-1 col-sm-10 col-sm-push-1 col-md-10 col-md-push-1 col-lg-8 col-lg-push-2">
+			<div class="row">
+				<div class="hidden-xs hidden-sm hidden-md col-lg-4 no_padding">
+					<div class="contact_information clearfix">
+						<h1 class="font-RobotoCondensed-Bold"> Contact Information </h1>
+						<h2 class="font-RobotoCondensed-Bold"> click to view </h2>
+						<ul>
+							<li><a href="https://plus.google.com/" target="_blank" class="google_plus">  </a></li>
+							<li><a href="https://www.facebook.com" target="_blank" class="facebook_icon"> </a></li>
+							<li><a href="https://www.twitter.com" target="_blank" class="twitter_icon"> </a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 no_padding">
+					<div class="subscribe clearfix">
+						<h1 class="font-RobotoCondensed-Bold"> get in touch</h1>
+						<form method="POST">
+							<div class="row">
+								<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+									<div class="subscription_part1 clearfix">
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+											<input id="firstname" class="font-RobotoCondensed-Light" type="text" placeholder="name" name="firstname" value="" required="">
+										</div>
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+											<input class="font-RobotoCondensed-Light" type="email" name="email" placeholder="email" required="">
+										</div>
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+											<input class="font-RobotoCondensed-Light" type="text" placeholder="subject" name="subject" required="">
+										</div>
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+											<textarea class="font-RobotoCondensed-Light" name="message" placeholder="text" rows="3" cols="22" required=""></textarea>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+									<div class="subscription_part2">
+										<input type="radio" name="gender" value="1" required="">
+											<span class="font-RobotoCondensed-Light"> male </span>
+										<input type="radio" name="gender" value="2" required="">
+											<span class="font-RobotoCondensed-Light"> female </span>
+
+										<br><br><br><br><br>
+  										<span class="font-RobotoCondensed-Light"> Sign up for newsletter: </span>  <br><br>
+  										<input type="checkbox" name="Images" value="recive images"> <span class="checkbox_span"> recive images</span> <br>
+				  						<input type="checkbox" name="Promotions" value="recive promotions"> <span class="checkbox_span"> recive promotions </span> <br>
+				  						<input type="checkbox" name="Updates" value="recive updates"> <span class="checkbox_span">  recive updates </span> <br>
+				  						<input type="checkbox" name="job_offers" value="recive job offers"> <span class="checkbox_span">  recive job offers </span> <br>
+				  						 <input class="font-RobotoCondensed-Bold" type="submit" value="send" onclick="alert('Thank You For Subscription')"> 
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="socials col-xs-12 col-sm-12 col-md-12 hidden-lg">
+					<h2 class="font-RobotoCondensed-Bold left"> click to view </h2>
+					<ul class="right">
+						<li><a href="https://plus.google.com/" target="_blank" class="google_plus">  </a></li>
+						<li><a href="https://www.facebook.com" target="_blank" class="facebook_icon"> </a></li>
+						<li><a href="https://www.twitter.com" target="_blank" class="twitter_icon"> </a></li>
+					</ul>
+				</div>
+			</div>
+
+				<footer>
+					<span class="font-RobotoCondensed-Bold author left"> © copyright 2017 </span>
+					<span class="font-RobotoCondensed-Bold author right">  შექმნილია: ბერდია რომელაშვილის და ფრიდონ ოსიაშვილის მიერ.</span>
+				</footer>
 		</div>
 	</div>
-
 </div>
+
 
 
 <script type="text/javascript" src="js/jquery.min.js"></script>
