@@ -49,13 +49,13 @@
 }
 .left_control {
 	margin-left: -6.5%;
-	max-width: 195px;
+	max-width: 225px;
 	margin-top: 19%;
 }
 .right_control {
 	margin-top: 19%;
 	margin-right: -6.9%;
-	max-width: 195px;
+	max-width: 225px;
 }
 .logo {
 	position: absolute;
@@ -215,6 +215,10 @@
 	right: 0px;
 	top: -40px;
 }
+
+/*--------ANIMATIONS---------*/
+
+/* -- car -- */
 .moving_car_img{
   animation: animationFrames ease-in 3.5s;
   animation-iteration-count: infinite;
@@ -277,6 +281,9 @@
     -ms-transform:  translate(-3500px,0px)  ;
   }
 } 
+
+/*----------------------------------------------*/
+
  #map {	
  	display: block;
  	height: 40vw;
@@ -437,6 +444,16 @@ footer {
 .socials h2 {
 	color: black;
 }
+
+@media screen and (max-width: 1699px) {
+	.left_control {
+		max-width: 195px;
+	}
+	.right_control {
+		max-width: 195px;
+	}
+}
+
 @media screen and (max-width: 1199px) {
 	.subscribe {
 		background-color: #EBE8DE;
